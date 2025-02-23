@@ -44,6 +44,55 @@
         <p class="con black-text darken-4">You smart, loyal, you genius. You see the hedges, how I got haped up? 
             Our restaurant offers a cozy and elegant ambiance, complete with a vibrant and intimate atmosphere. The food is delicious, savory, and freshly prepared, with decadent and exquisite dishes to satisfy your cravings. Our attentive and friendly staff provide prompt and courteous service, making you feel knowledgeable about our menu offerings. The warm and inviting atmosphere makes for an unforgettable dining experience, with memorable and enjoyable moments to cherish. Our diverse and creative menu features seasonal, local, and artisanal options, showcasing high-quality, freshly prepared, and expertly crafted dishes. With outstanding and impressive quality, our restaurant is delightful, charming, and highly recommended. We're scenic, romantic, family-friendly, and pet-friendly, with wheelchair accessibility and convenient location. Plus, our prices are affordable, with generous portions and unique, authentic flavors to savor.</p> <hr>
         </div>
+        <!-- collapsible -->
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l4">
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header orange darken-4 white-text">
+                                <i class="material-icons">filter_drama</i>
+                                <h6>Cakes</h6>
+                            </div>
+                            <div class="collapsible-body">
+                                <img src="img/sponge_cake.webp" alt="cake" class="responsive-img materialboxed">
+                                <p>Sweet cakes for your sweet tooth,freshlyprepared and expertly crafted to makes you order for more<p>                                
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            <div class="col s12 l4">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header orange darken-4 white-text">
+                            <i class="material-icons">filter_drama</i>
+                            <h6>Soups</h6>
+                        </div>
+                        <div class="collapsible-body">
+                            <img src="img/mexican_soup.webp" alt="cake" class="responsive-img materialboxed">
+                            <p>Sweet cakes for your sweet tooth,freshlyprepared and expertly crafted to makes you order for more<p>                                
+                        </div>
+                    </li>
+    
+                </ul>
+            </div>
+            <div class="col s12 l4">
+                <ul class="collapsible">
+                    <li>
+                    <div class="collapsible-header orange darken-4 white-text">
+                        <i class="material-icons">filter_drama</i>
+                        <h6>Chicken</h6>
+                    </div>
+                    <div class="collapsible-body">
+                        <img src="img/chicken_8.webp" alt="cake" class="responsive-img materialboxed">
+                        <p>Sweet cakes for your sweet tooth,freshlyprepared and expertly crafted to makes you order for more<p>                                
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
 
         <!-- customers -->
         <h2 class="center-align orange-text darken-4">What Our Customers Say...</h2>
@@ -75,13 +124,13 @@
                         <span>Lafeez Abdul</span> <br>
                         <i class="customers black-text">"I've been to a lot of restaurants in my time, but the service at this restaurant was truly outstanding. Our server was friendly, attentive, and knowledgeable, and went above and beyond to ensure that we had everything we needed."</i>
                     </li>
-
                 </ul>
             </div>
+        </section>
             <div class="parallax-container">
                 <div class="parallax"><img src="img/cake.jpg"></div>
             </div>
-        </section>
+        
         <!-- cake -->
         <div class="container">
         <h1 class="cake orange-text darken-4">Cakes</h1>
@@ -109,7 +158,7 @@
                             <div class="card-image"><img src="img/velvet_cake.webp" class="responsive-img materialboxed" alt=""></div>
                             <div class="card-content">
                                 <span class="card-title orange-text">Velvet Cake</span><hr>
-                                <p>Give thanks to the most high.This cake is delicious.</p>
+                                <p>Delicious velvet cake a splash of red. Splendid indeed</p>
                             </div>
                             <div class="card-action">
                                 <a href="" class="orange-text">INGREDIENTS</a>
@@ -509,12 +558,21 @@
                         </div>
                     </div>
         <!-- contacts -->
-        
+        <div class="contact black white-text"></div>
+        <img src="img/logo.png" alt="logo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at nobis, 
+            minus ea dolorem repudiandae alias recusandae debitis dolor libero.</p>
+            <h5>Quick Links</h5>
+            <p>Cakes</p>
+            <p>Soup</p>
+            <p>Chicken</p>
+            <p>Customers</p>
+
     </main>
     <footer>
         <!-- footer -->
-        <div class="clas">
-            <i class=" tiny material-icons">copyright</i>2025 Recipe.com|CORE_TECH
+        <div class="class">
+            <i class="tiny material-icons">copyright</i>2025 Recipe.com|CORE_TECH
 
         </div>
     </footer>
@@ -531,7 +589,8 @@
         $(document).ready(function(){
                 $('.slider').slider();
             $('.parallax').parallax();
-        });
+            $('.collapsible').collapsible();
+            });
     </script>
 </body>
 </html>
