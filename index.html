@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe.com</title>
+    <!-- link materialize css -->
     <link rel="stylesheet" href="css/materialize.css">
+    <!-- link icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon">
 </head>
@@ -15,27 +17,43 @@
             <nav class="white ">
                 <div class="container">
                     <a href="" class="brand-logo">
-                        <img src="img/logo.png" alt="main logo" width="15%">
+                        <img src="img/logo.png" alt="main logo" width="15%" class="hide-on-med-and-down">
+                        <img src="img/logo.png" alt="main logo" width="75%" class="hide-on-large-only">
                     </a>
-                    <ul class="right">
+                    <!-- for sidenav to show only on mobile devices -->
+                    <a href="#mobile-nav" class="sidenav-trigger right">
+                        <i class="material-icons orange-text text-darken-4 hide-on-large-only">menu</i>
+                    </a>
+                    <!-- to hide on phone and tablet -->
+                    <ul class="right hide-on-med-and-down">
                         <li><a class="orange-text text-darken-4" href="Home">Home</a></li>
                         <li><a class="orange-text text-darken-4" href="Home">Cakes</a></li>
                         <li><a class="orange-text text-darken-4" href="Home">Soups</a></li>
                         <li><a class="orange-text text-darken-4" href="Home">Chicken</a></li>
                         <li><a class="orange-text text-darken-4" href="Home">Customers</a></li>
                     </ul>
-                </div>
+                </div>                
             </nav>
         </div>
         
         <!-- slider -->
         <div class="slider">
             <ul class="slides">
-                <li><img src="img/cake_fruit.jpg" class="responsive-img"></li>
-                <li><img src="img/shrimp_soup.jpg" class="responsive-img"></li>
-                <li><img src="img/chicken_3.jpg" class="responsive-img"></li>
-                <li><img src="img/chicken_11.jpg" class="responsive-img"></li>
-                <li><img src="img/chicken_3.jpg" class="responsive-img"></li>
+                <li><img src="img/cake_fruit.jpg" class="responsive-img" alt="fruit cake"></li>
+                <li><img src="img/shrimp_soup.jpg" class="responsive-img" alt="shrimp soup"></li>
+                <li><img src="img/chicken_3.jpg" class="responsive-img" alt="chicken soup"></li>
+                <li><img src="img/dessert_chocolate.jpg" class="responsive-img" alt="chocolote cake"></li>
+                <li><img src="img/ginger_cake.webp" class="responsive-img" alt="ginger cake"></li>
+            </ul>
+        </div>
+        <!-- sidenav for mobile device -->
+        <div class="sidenav" id="mobile-nav">
+            <ul>
+                <li><a class="orange-text text-darken-4" href="Home">Home</a></li>
+                <li><a class="orange-text text-darken-4" href="Home">Cakes</a></li>
+                <li><a class="orange-text text-darken-4" href="Home">Soups</a></li>
+                <li><a class="orange-text text-darken-4" href="Home">Chicken</a></li>
+                <li><a class="orange-text text-darken-4" href="Home">Customers</a></li>
             </ul>
         </div>
     </header> 
@@ -53,12 +71,12 @@
                     <ul class="collapsible">
                         <li>
                             <div class="collapsible-header orange darken-4 white-text">
-                                <i class="material-icons">label</i>
-                                <h6>Cakes</h6>
+                                <i class="material-icons">label</i>Cakes
                             </div>
                             <div class="collapsible-body">
                                 <img src="img/sponge_cake.webp" alt="cake" class="responsive-img materialboxed">
-                                <p class="flow-text">Sweet cakes for your sweet tooth,freshlyprepared and expertly crafted to makes you order for more<p class="flow-text">                                
+                                <p class="">Sweet cakes for your sweet tooth,freshlyprepared and expertly crafted to makes you order for more<p>
+                                    <button class="btn-flat orange white-text darken-4">All Cakes Recipes</button>                           
                             </div>
                         </li>
 
@@ -68,12 +86,12 @@
                 <ul class="collapsible">
                     <li>
                         <div class="collapsible-header orange darken-4 white-text">
-                            <i class="material-icons">label</i>
-                            <h6>Soups</h6>
+                            <i class="material-icons">label</i>Soups
                         </div>
                         <div class="collapsible-body">
                             <img src="img/mexican_soup.webp" alt="cake" class="responsive-img materialboxed">
-                            <p class="flow-text">Sweet cakes for your sweet tooth,freshlyprepared and expertly crafted to makes you order for more<p class="flow-text">                                
+                            <p class="">Sweet cakes for your sweet tooth,freshlyprepared and expertly crafted to makes you order for more<p> 
+                                <button class="btn-flat orange white-text darken-4">All Soup Recipes</button>
                         </div>
                     </li>
     
@@ -83,12 +101,12 @@
                 <ul class="collapsible">
                     <li>
                     <div class="collapsible-header orange darken-4 white-text">
-                        <i class="material-icons">label</i>
-                        <h6>Chicken</h6>
+                        <i class="material-icons left">label</i>Chicken
                     </div>
                     <div class="collapsible-body">
                         <img src="img/chicken_8.webp" alt="cake" class="responsive-img materialboxed">
-                        <p class="flow-text">Sweet cakes for your sweet tooth,freshlyprepared and expertly crafted to makes you order for more<p class="flow-text">                                
+                        <p class="">Sweet cakes for your sweet tooth,freshlyprepared and expertly crafted to makes you order for more<p>
+                    <button class="btn-flat orange white-text darken-4">All Chicken Recipes</button>
                     </div>
                     </li>
                 </ul>
@@ -284,6 +302,7 @@
         <h1 class="soup orange-text text-darken-4">Soups</h1>
         <p class="flow-text">Warm up with a bowl of comfort from our soothing soup selection! Our chefs have crafted a variety of delicious and nutritious soups to nourish both body and soul. From classic favorites like creamy tomato and savory chicken noodle, to international inspirations and innovative twists, our soups are made fresh daily with only the finest ingredients. Whether you're looking for a quick pick-me-up or a satisfying meal, our soups are the perfect choice. Explore our menu to discover your new favorite soup and let the warmth begin!</p>
         </div>
+        <!-- card section -->
         <section class="section">
             <div class="container">
                 <div class="row">
@@ -430,6 +449,7 @@
             <h2 class="heading orange-text text-darken-4">Chicken</h2>
             <p class="flow-text" class="flow-text black-text darken-4">Our chicken dishes are a cut above the rest, with tender, juicy meat and flavors that will make your taste buds dance. From classic comfort food like crispy fried chicken and creamy chicken pasta, to international inspirations and spicy twists, our chicken menu has something for everyone. Our chefs use only the freshest, highest-quality chicken, cooked to perfection to bring out the full flavor and texture. Whether you're in the mood for a satisfying meal or a quick bite, our chicken dishes are sure to hit the spot. Browse our menu to explore our finger-lickin' good chicken options!.</p> 
             </div> 
+            <!-- card section -->
         <section class="section">
             <div class="container">
                 <div class="row">
@@ -574,7 +594,8 @@
                     <h4 class="orange-text text-darken-4">Contact Us Today!</h4>
                     <p class="flow-text">To get your delicious meals, sweet pastries and tasty chickens, contact us below.</p> <br> <br>
                         <button class="btn btn-large orange darken-4 white-text">CALL US NOW
-                            <i class="material-icons left">call</i>
+                            <i class="material-icons left">call</i> 
+                            <!-- left was used to align text with icon -->
                         </button>
                 </div>
                 <div class="col s12 l6 push-l1">
@@ -635,7 +656,8 @@
     <script src="js/materialize.js"> </script>
     <script>
         $(document).ready(function(){
-                $('.slider').slider();
+            $('.sidenav').sidenav();
+            $('.slider').slider();
             $('.parallax').parallax();
             $('.collapsible').collapsible();
             });
