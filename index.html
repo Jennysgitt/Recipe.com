@@ -12,9 +12,6 @@
     .slider .indicators .indicator-item.active {
         background-color: #e65100 !important;
     }
-    .slider{
-        height: 600px;
-    }
     </style>
     
     <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon">
@@ -671,11 +668,11 @@
                         <div class="col s12 l4 push-l4">
                             <h4 class="orange-text text-darken-4">Quick Links</h4>
                             <ul>
-                                <li><a href="#home" class="white-text"></a>Back to top</li>
-                                <li><a href="#cakes" class="white-text"></a>Cake</li>
-                                <li><a href="#soups" class="white-text"></a>Soups</li>
-                                <li><a href="#chicken" class="white-text"></a>Chicken</li>
-                                <li><a href="#customers" class="white-text"></a>Customers</li>
+                                <li><a href="#home" class="white-text"></a> Back to top</li>
+                                <li><a href="#cakes" class="white-text"></a> Cake</li>
+                                <li><a href="#soups" class="white-text"></a> Soups</li>
+                                <li><a href="#chicken" class="white-text"></a> Chicken</li>
+                                <li><a href="#customers" class="white-text"></a> Customers</li>
                             </ul>
                         </div>
                     </div>
@@ -696,7 +693,9 @@
     <script>
         $(document).ready(function(){
             $('.sidenav').sidenav();
-            $('.slider').slider();
+            $('.slider').slider({
+                height:600
+            });
             $('.parallax').parallax();
             $('.collapsible').collapsible();
             });
